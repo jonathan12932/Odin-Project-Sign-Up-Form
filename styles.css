@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('../fonts/Norse-Bold.otf') format('opentype');
+}
+
+:root {
+
+    --font: 'Norse Bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.blackSpace {
+
+    width: 15vw;
+    height: 100vh;
+    background-color: black;
+}
+
+img {
+
+    width: 25vw;
+    height: 100vh;
+}
+
+#content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45vw;
+    height: 100vh;
+}
+
+
+.mainText {
+
+    font-family: var(--font);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 2em;
+    margin-right: 4em;
+    margin-top: 15vh;
+}
