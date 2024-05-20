@@ -12,12 +12,16 @@ body {
     flex-direction: row;
     align-items: flex-start;
     margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden; // Temporarily hide overflows to test if it resolves the issue
+
 }
 
 .blackSpace {
     width: 15vw;
     height: 100vh;
-    background-color: black;
+    background-color: #074207;
 }
 
 .image-container {
@@ -123,4 +127,19 @@ input {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.logIn {
+
+    padding: 1em 0px;
+    font-size: 1.75vh;
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+.text-button {
+
+    color: #004225;
+    font-weight: 900;
+    text-decoration: none;
 }
