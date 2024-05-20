@@ -5,7 +5,7 @@
 
 :root {
 
-    --font: 'Norse Bold', Georgia, 'Times New Roman', Times, serif;
+    --font: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -23,10 +23,48 @@ body {
     background-color: black;
 }
 
-img {
+
+.image-container {
+
+    position: relative;
+    width: 25vw;
+    height: 100vh;
+}
+
+.tree {
 
     width: 25vw;
     height: 100vh;
+}
+
+.banner-overlay {
+
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-background {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+#banner {
+
+    width: auto;
+    height: 15vh;
+    opacity: 1;
+    z-index: 1;
 }
 
 #content {
@@ -47,4 +85,32 @@ img {
     margin-left: 2em;
     margin-right: 4em;
     margin-top: 15vh;
+}
+
+#userForm {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#inputs {
+
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+}
+
+#inputs> :nth-child(1) {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#inputs> :nth-child(2) {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
 }

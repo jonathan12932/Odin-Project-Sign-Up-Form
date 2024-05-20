@@ -13,7 +13,17 @@
 
     <div class="blackSpace"></div>
 
-    <img src="photo-1585202900225-6d3ac20a6962.jpeg">
+    <div class="image-container">
+        <img class="tree" src="images/photo-1585202900225-6d3ac20a6962.jpeg" alt="Background" class="background-image">
+
+        <div class="banner-overlay">
+            <div class="banner-background"> </div>
+            <img id="banner" src="images/odin-lined.png" alt="Banner" class="banner-image">
+            <p
+                style="font-family: Norse Bold; font-size: 100px; font-weight: 600; color: white; opacity: 1; z-index: 2;">
+                ODIN </p>
+        </div>
+    </div>
 
     <div id="content">
 
@@ -25,6 +35,35 @@
             <br> <br> <br> <br> Let's do this!
         </div>
 
+        <form id="userForm">
+
+            <div id="inputs">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" required placeholder="Enter your password">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="text" id="confirmPassword" name="confirmPassword" required
+                        placeholder="Confirm your password">
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
 
     </div>
 
