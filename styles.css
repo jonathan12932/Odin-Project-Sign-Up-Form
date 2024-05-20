@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse Bold';
-    src: url('../fonts/Norse-Bold.otf') format('opentype');
+    src: url('../../fonts/Norse-Bold.otf') format('opentype');
 }
 
 :root {
@@ -93,8 +93,9 @@ body {
     font-family: var(--font);
     display: flex;
     flex-direction: column;
-    padding: 2em;
-    padding-left: 0em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 }
 
 label {
@@ -109,4 +110,17 @@ input {
     color: black;
     font-size: 1.75vh;
     font-weight: 600;
+}
+
+#createAccount {
+    width: 14em;
+    background-color: #004225;
+    color: white;
+    border: none;
+    padding: 1em 0px;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
