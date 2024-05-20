@@ -78,7 +78,7 @@ body {
 #userForm {
     display: flex;
     flex-direction: column;
-    margin-left: 4em;
+    margin-left: 3.5em;
 }
 
 #inputs {
@@ -88,7 +88,7 @@ body {
 
 #inputs>div {
 
-    font-size: 2vh;
+    font-size: 1.75vh;
     font-weight: 600;
     font-family: var(--font);
     display: flex;
@@ -104,9 +104,9 @@ label {
 
 input {
 
-    margin-top: .5em;
-    margin-bottom: 2em;
+    margin-top: .25em;
+    margin-bottom: 1.5em;
     color: black;
-    font-size: 2vh;
+    font-size: 1.75vh;
     font-weight: 600;
 }
