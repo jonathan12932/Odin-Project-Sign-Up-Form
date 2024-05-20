@@ -4,12 +4,10 @@
 }
 
 :root {
-
     --font: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -17,28 +15,23 @@ body {
 }
 
 .blackSpace {
-
     width: 15vw;
     height: 100vh;
     background-color: black;
 }
 
-
 .image-container {
-
     position: relative;
     width: 25vw;
     height: 100vh;
 }
 
 .tree {
-
     width: 25vw;
     height: 100vh;
 }
 
 .banner-overlay {
-
     position: absolute;
     top: 15%;
     left: 0;
@@ -50,7 +43,6 @@ body {
 }
 
 .banner-background {
-
     position: absolute;
     width: 100%;
     height: 100%;
@@ -60,7 +52,6 @@ body {
 }
 
 #banner {
-
     width: auto;
     height: 15vh;
     opacity: 1;
@@ -68,7 +59,6 @@ body {
 }
 
 #content {
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -76,11 +66,9 @@ body {
     height: 100vh;
 }
 
-
 .mainText {
-
     font-family: var(--font);
-    font-size: 30px;
+    font-size: 3vh;
     font-weight: 600;
     margin-left: 2em;
     margin-right: 4em;
@@ -88,29 +76,37 @@ body {
 }
 
 #userForm {
-
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    margin-left: 4em;
 }
 
 #inputs {
-
     display: flex;
     flex-direction: row;
+}
+
+#inputs>div {
+
+    font-size: 2vh;
+    font-weight: 600;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
     padding: 2em;
+    padding-left: 0em;
 }
 
-#inputs> :nth-child(1) {
+label {
 
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+    color: gray;
 }
 
-#inputs> :nth-child(2) {
+input {
 
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: 2em;
+    color: black;
+    font-size: 2vh;
+    font-weight: 600;
 }

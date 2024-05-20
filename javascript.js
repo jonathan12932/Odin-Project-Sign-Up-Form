@@ -3,9 +3,7 @@ var userInfo = [];
 
 
 
-document.getElementById('userForm').addEventListener('submit', function (event) {
-
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+document.getElementById('userForm').addEventListener('submit', () => {
 
     // Get the value from each input field
     let firstName = document.getElementById('firstName').value;
@@ -15,12 +13,22 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
 
-    // Add values to the array
-    userInfo.push(firstname, lastname, email);
+    if (password != confirmPassword)
+        return;
 
-    // Optional: Display the array in the console or elsewhere
-    console.log(userInfo);
-
-    // Clear the form fields after submission
-    this.reset();
+    userInfo.push(new Account(firstName, lastName, email, phoneNumber, password))
 });
+
+class Account {
+
+
+    constructor(firstName, lastName, email, phoneNumber, password) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+    }
+
+}
