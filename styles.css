@@ -14,8 +14,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    overflow: hidden; // Temporarily hide overflows to test if it resolves the issue
-
+    overflow: hidden;
 }
 
 .blackSpace {
@@ -27,7 +26,7 @@ body {
 .image-container {
     position: relative;
     width: 25vw;
-    height: 100vh;
+    height: 99vh;
 }
 
 .tree {
